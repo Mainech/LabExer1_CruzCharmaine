@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.charmaine.labexer1_cruzcharmaine.MainActivity">
+
+    <!-- quiz 1 -->
+    <TextView
+        android:id="@+id/quiz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 1"
+        android:layout_marginTop="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/lab"
+        android:layout_alignStart="@+id/lab" />
+
+    <EditText
+        android:id="@+id/quiz1Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBottom="@+id/quiz1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- Quiz 2 -->
+    <TextView
+        android:id="@+id/quiz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 2"
+        android:layout_below="@+id/quiz1"
+        android:layout_alignLeft="@+id/quiz1"
+        android:layout_alignStart="@+id/quiz1"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:id="@+id/quiz2Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/quiz2"
+        android:layout_alignBottom="@+id/quiz2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- seatworks -->
+    <TextView
+        android:id="@+id/swk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Seatworks"
+        android:layout_below="@+id/quiz2"
+        android:layout_alignLeft="@+id/lab"
+        android:layout_alignStart="@+id/lab" />
+
+    <EditText
+        android:id="@+id/swkGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/swk"
+        android:layout_alignBottom="@+id/swk"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- lab -->
+    <TextView
+        android:id="@+id/lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Exercises"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/major"
+        android:layout_alignStart="@+id/major" />
+
+    <EditText
+        android:id="@+id/labGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/lab"
+        android:layout_alignBottom="@+id/lab"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- major exam -->
+    <TextView
+        android:id="@+id/major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major Exam"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/lab"
+        android:layout_toLeftOf="@+id/compute"
+        android:layout_toStartOf="@+id/compute" />
+
+    <EditText
+        android:id="@+id/majorGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/major"
+        android:layout_alignBottom="@+id/major"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/compute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="410dp"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="computeGrade"/>
+
+
+</RelativeLayout>
